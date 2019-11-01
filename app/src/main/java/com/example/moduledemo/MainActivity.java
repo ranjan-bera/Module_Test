@@ -1,8 +1,9 @@
 package com.example.moduledemo;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
+import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.myutils.MyMath;
 
@@ -12,5 +13,9 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        Toast.makeText(this, "Plus:" + MyMath.Plus(10, 20), Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "Plus:" + MyMath.Minus(20, 10), Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "Plus:" + MyMath.Times(10, 20), Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "Plus:" + MyMath.Div(20, 10), Toast.LENGTH_SHORT).show();
     }
 }
