@@ -14,8 +14,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Toast.makeText(this, "Plus:" + MyMath.Plus(10, 20), Toast.LENGTH_SHORT).show();
-        Toast.makeText(this, "Plus:" + MyMath.Minus(20, 10), Toast.LENGTH_SHORT).show();
-        Toast.makeText(this, "Plus:" + MyMath.Times(10, 20), Toast.LENGTH_SHORT).show();
-        Toast.makeText(this, "Plus:" + MyMath.Div(20, 10), Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "Minus:" + MyMath.Minus(20, 10), Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "Multiply:" + MyMath.Times(10, 20), Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "Div:" + MyMath.Div(20, 10), Toast.LENGTH_SHORT).show();
     }
 }
